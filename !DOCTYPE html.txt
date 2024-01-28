@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .audio-control {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .audio-control:hover {
+        background-color: #555;
+    }
+  </style>
+</head>
+<body class="index-page">
+
+  <!-- Audio Player -->
+  <audio id="backgroundMusic" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+
+  <!-- Header -->
+  <header>
+    <img id="logo" src="logo.png" alt="Logo" width="100" height="100">
+    <h1>BRUSA IT CONSULTING LLC</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="services.html">Services</a> |
+      <a href="testimonials.html">Testimonials</a>
+    </nav>
+    <video autoplay loop muted style="position: absolute; top: 0; right: 0; width: 30%; height: 100%;">
+        <source src="digital.mp4" type="video/mp4">
+    </video>
+
+    <!-- Button to control audio playback -->
+    <button class="audio-control" onclick="toggleAudio()">Stop Sound</button>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Welcome to BRUSA IT Consulting LLC</h2>
+    
+    <p>At BRUSA IT Consulting, LLC we provide professional IT consulting services in Larchmont, NY and beyond. Our team of experienced IT professionals can assist you with any of your technical needs. Whether you need help setting up a business network, deploying a website, or managing a complex IT infrastructure, we have the expertise and experience to get the job done right. Get in touch with us today to learn more about how we can help.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact Information: juliano.souza@brusaitconsultingllc.com</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a></p>
+    <p><a href="terms-of-service.html">Terms of Service</a></p>
+    <p>&copy; 2023 Brusa IT Consulting LLC</p>
+  </footer>
+
+  <script>
+      function toggleAudio() {
+          var audio = document.getElementById("backgroundMusic");
+          if (audio.paused) {
+              audio.play();
+              event.target.innerText = "Stop Sound";
+          } else {
+              audio.pause();
+              event.target.innerText = "Play Sound";
+          }
+      }
+  </script>
+</body>
+</html>

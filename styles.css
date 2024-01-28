@@ -1,0 +1,352 @@
+/* Global Styles */
+html, body {
+  height: auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAF3E0;
+  position: relative;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Background Video Styles */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  object-fit: cover;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007BFF;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: transparent;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: 'Cyber', Arial, sans-serif;
+}
+
+/* Home Page Styles */
+.highlight {
+  color: #ff4500;
+}
+
+.specialFont {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.social-media {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #0056b3;
+}
+
+/* Additional styles for the services page */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-column {
+  flex: 1;
+  margin: 0 10px; /* Add space between columns */
+  box-sizing: border-box;
+  padding: 0 20px; /* Add padding to the left and right of the text */
+  border-right: 1px solid black; /* Add a black border to the right of each column */
+}
+
+.service-column:last-child {
+  border-right: none; /* Remove the border from the last column */
+}
+
+.index-page {
+  background-image: url('computer.png');
+  background-size: cover; /* This will cover the entire viewport */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
+  background-attachment: fixed; /* This will make the background image fixed, creating a parallax effect */
+  background-position: center center; /* This will center the background image */
+}
+
+.index-page h2,
+.index-page p {
+  color: white;
+}
+
+/* Privacy Policy Page Styles */
+body[page="privacy-policy"] {
+  background-color: #FFDAB9;
+}
+
+body[page="privacy-policy"] main {
+  background-color: #FFB6C1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #0056b3;
+}
+
+/* Footer Logo Styles */
+.partner-logos {
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.partner-logos img {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+/* Social Buttons Styles */
+.social-buttons {
+  margin-bottom: 20px;
+}
+
+.social-btn {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.facebook-btn {
+  background: url('facebook.jfif') no-repeat center center;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+}
+
+.x-btn {
+  background: url('x.png') no-repeat center center;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+}
+
+.linkedin-btn {
+  background: url('linkedin.png') no-repeat center center;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+}
+
+/* Testimonials Page Styles */
+body[page="testimonials"] main {
+  padding: 50px 20px;
+}
+
+.testimonials-container {
+  position: relative;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 15px;
+  height: 100px;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: rgba(168, 213, 186, 0.7);
+  border-radius: 5px;
+}
+
+.testimonial {
+  display: none;
+  font-family: Georgia, serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ADD8E6;
+  border: none;
+  border-radius: 5px;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+/* Additional styles for the contact page */
+.contact-form {
+  max-width: 500px; /* Adjust as needed */
+  margin: 0 auto; /* Center the form */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Add some space between form groups */
+}
+
+.form-group label {
+  display: block; /* Make labels block elements */
+  margin-bottom: 10px; /* Add some space below the label */
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%; /* Make input boxes take up the full width of the form */
+  padding: 10px; /* Add some padding inside the input boxes */
+  box-sizing: border-box; /* Ensure padding doesn't increase the total width */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Round the corners */
+}
+
+#brusa2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#right-image {
+  float: right; /* Makes the image float to the right */
+  margin: 0 0 20px 20px; /* Adds some space to the left and bottom of the image */
+  width: 220px; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+body[page="about"] #centered-image {
+  float: left; /* Makes the image float to the left */
+  margin: 0 20px 20px 0; /* Adds some space to the right and bottom of the image */
+  width: 140px; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio of the image */
+  shape-outside: circle(50%); /* Makes the text flow around the image in a circular shape */
+  shape-margin: 1em; /* Adds some space between the image and the surrounding text */
+}
+
+body[page="about"] footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body[page="about"] #left-footer-image,
+body[page="about"] #right-footer-image {
+  width: 120px;
+  height: auto;
+}
+
+body[page="about"] .footer-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2; /* This ensures the text content takes up the available space between the images */
+}
+
+/* Styles for the audio controls on the index page */
+.index-page .audio-control {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.index-page .audio-control:hover {
+  background-color: #555;
+}

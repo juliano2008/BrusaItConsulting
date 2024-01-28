@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Services</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Additional styles for the services page */
+    body {
+      font-family: 'Cyber', sans-serif; /* New font */
+    }
+    .services-container {
+      display: flex;
+      justify-content: space-between;
+      background-color: #ADD8E6; /* Light blue background color */
+      padding: 40px; /* Increased padding */
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 1200px; /* Increased max-width */
+      margin: 20px auto; /* Center the container */
+      height: auto; /* Adjust height based on content */
+    }
+    .service-column {
+      flex: 1;
+      margin: 0 20px; /* Increased space between columns */
+      box-sizing: border-box;
+    }
+    h2 {
+      font-size: 24px; /* Adjusted font size */
+      margin-bottom: 15px; /* Increased margin */
+    }
+    p {
+      font-size: 18px; /* Adjusted font size */
+      line-height: 1.4; /* Adjusted line spacing */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img id="logo" src="logo.png" alt="Logo" width="100" height="100">
+    <h1>Our Services</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="services.html">Services</a> |
+      <a href="testimonials.html">Testimonials</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="services-container">
+      <!-- First Column -->
+      <div class="service-column">
+        <img src="Network.jfif" alt="Network Image" width="100%" style="max-width: 300px; display: block; margin: 0 auto;">
+        <h2>Infrastructure Management:</h2>
+        <p>  Our Infrastructure Management service ensures a robust and secure IT infrastructure. We handle network setup, cloud integration, server optimization, and disaster recovery. With our expert team's continuous monitoring, we guarantee maximum uptime and peak performance for your systems.</p>
+      </div>
+
+      <!-- Second Column -->
+      <div class="service-column">
+        <img src="cyber.jfif" alt="Cyber Image" width="100%" style="max-width: 300px; display: block; margin: 0 auto;">
+        <h2>Cybersecurity Solutions:</h2>
+        <p>  In the digital age, security threats constantly evolve. Our Cybersecurity Solutions protect your business from these threats. We provide comprehensive security services, from vulnerability assessments to 24/7 monitoring, ensuring your data's confidentiality and integrity.</p>
+      </div>
+
+      <!-- Third Column -->
+      <div class="service-column">
+        <img src="Digital.jfif" alt="Digital Image" width="100%" style="max-width: 300px; display: block; margin: 0 auto;">
+        <h2>Digital Transformation Consulting:</h2>
+        <p> Our Digital Transformation Consulting aids businesses in embracing the digital future. We guide you through the complexities of digital technology integration, from automation to data analytics, ensuring your business stays ahead in the digital era.</p>
+      </div>
+    </div>
+     <!-- Cyber Attacks Table -->
+    <table style="width:100%; border-collapse: collapse; margin-top: 20px;">
+        <thead>
+            <tr style="background-color: #ADD8E6;">
+                <th style="padding: 10px; border: 1px solid #000;">Cyber Attack</th>
+                <th style="padding: 10px; border: 1px solid #000;">Frequency</th>
+                <th style="padding: 10px; border: 1px solid #000;">Mitigation Measures</th>
+                <th style="padding: 10px; border: 1px solid #000;">Future Expectations</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td style="padding: 10px; border: 1px solid #000;">Phishing Attacks</td>
+            <td style="padding: 10px; border: 1px solid #000;">Very Common</td>
+            <td style="padding: 10px; border: 1px solid #000;">Employee training, Email filtering, Two-factor authentication</td>
+            <td style="padding: 10px; border: 1px solid #000;">Increase in targeted spear-phishing</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #000;">Ransomware</td>
+            <td style="padding: 10px; border: 1px solid #000;">Common</td>
+            <td style="padding: 10px; border: 1px solid #000;">Regular backups, Patching, Endpoint protection</td>
+            <td style="padding: 10px; border: 1px solid #000;">More targeted attacks on businesses</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #000;">DDoS Attacks</td>
+            <td style="padding: 10px; border: 1px solid #000;">Common</td>
+            <td style="padding: 10px; border: 1px solid #000;">Traffic filtering, Rate limiting, CDN</td>
+            <td style="padding: 10px; border: 1px solid #000;">Larger scale attacks with IoT devices</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #000;">Man-in-the-Middle</td>
+            <td style="padding: 10px; border: 1px solid #000;">Occasional</td>
+            <td style="padding: 10px; border: 1px solid #000;">Encryption, HTTPS, Secure Wi-Fi protocols</td>
+            <td style="padding: 10px; border: 1px solid #000;">Increase with insecure IoT devices</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #000;">SQL Injection</td>
+            <td style="padding: 10px; border: 1px solid #000;">Occasional</td>
+            <td style="padding: 10px; border: 1px solid #000;">Input validation, Parameterized queries</td>
+            <td style="padding: 10px; border: 1px solid #000;">Decline with better coding practices</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><a href="privacy-policy.html">Privacy Policy</a></p>
+    <p><a href="terms-of-service.html">Terms of Service</a></p>
+    <p>&copy; 2023 Brusa IT Consulting LLC</p>
+  </footer>
+
+</body>
+</html>

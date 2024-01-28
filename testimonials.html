@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testimonials</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay loop muted id="bgVideo">
+    <source src="social_media.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- Header -->
+  <header>
+    <img id="logo" src="logo.png" alt="Logo" width="100" height="100">
+    <h1>Testimonials</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="services.html">Services</a> |
+      <a href="testimonials.html">Testimonials</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="testimonials-container">
+      <!-- Testimonial 1 -->
+      <div class="testimonial active">
+        <p>"Brusa It consulting bring light to our office and provide the best action to solve the daily problems that we lead with."</p>
+        <p>- Mariah, NY</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial">
+        <p>"trustable service and best on-time performance to mitigate our necessities."</p>
+        <p>- Linda, NJ</p>
+      </div>
+
+      <!-- ... Add more testimonials as needed ... -->
+
+      <!-- Navigation Arrows -->
+      <button class="arrow left">&lt;</button>
+      <button class="arrow right">&gt;</button>
+    </div>
+  </main>
+  <!-- Footer -->
+ <footer>
+    <div class="social-buttons">
+      <a href="https://www.facebook.com/" class="social-btn facebook-btn"></a>
+      <a href="https://www.x.com/" class="social-btn x-btn"></a>
+      <a href="https://www.linkedin.com/" class="social-btn linkedin-btn"></a>
+    </div>
+    <p><a href="privacy-policy.html">Privacy Policy</a></p>
+    <p><a href="terms-of-service.html">Terms of Service</a></p>
+    <p>&copy; 2023 Brusa IT Consulting LLC</p>
+</footer>
+
+  <!-- JavaScript to handle testimonial navigation -->
+  <script>
+    const testimonials = document.querySelectorAll('.testimonial');
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+    let currentTestimonial = 0;
+
+    function showTestimonial(index) {
+      testimonials[currentTestimonial].classList.remove('active');
+      currentTestimonial = index;
+      testimonials[currentTestimonial].classList.add('active');
+    }
+
+    leftArrow.addEventListener('click', () => {
+      let newIndex = currentTestimonial - 1;
+      if (newIndex < 0) newIndex = testimonials.length - 1;
+      showTestimonial(newIndex);
+    });
+
+    rightArrow.addEventListener('click', () => {
+      let newIndex = (currentTestimonial + 1) % testimonials.length;
+      showTestimonial(newIndex);
+    });
+  </script>
+
+</body>
+</html>
